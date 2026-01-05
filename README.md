@@ -316,5 +316,12 @@ Contributions are welcome! Feel free to submit issues and pull requests.
 
 ## 👨‍💻 Author
 
+Built with ❤️ using TensorFlow, Flask, and modern web technologies.
+
+---
+
+**Happy Searching! 🔍✨**
+
+
 
 
