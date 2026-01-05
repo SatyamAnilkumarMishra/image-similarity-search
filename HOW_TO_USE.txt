@@ -1,0 +1,103 @@
+========================================
+AI IMAGE SIMILARITY SEARCH - HOW TO USE
+========================================
+
+✓ SETUP COMPLETE!
+
+Your project is ready to use. The server should be starting in a new window.
+
+==========================================
+HOW TO ACCESS THE APPLICATION
+==========================================
+
+1. Open your web browser (Chrome, Firefox, Edge, etc.)
+
+2. Go to this address:
+   http://localhost:5000
+
+==========================================
+HOW TO USE THE APPLICATION
+==========================================
+
+1. UPLOAD AN IMAGE
+   - Drag and drop any image onto the upload area
+   - OR click the upload area to browse for an image
+   - Supported formats: JPG, PNG, GIF, BMP
+
+2. ADJUST SETTINGS (optional)
+   - Change "Number of similar images" (1-50)
+   - Default is 10 images
+
+3. SEARCH
+   - Click the "Search Similar Images" button
+   - Wait a few seconds while the AI analyzes your image
+
+4. VIEW RESULTS
+   - See the most similar images from the database
+   - Each result shows a similarity percentage
+   - Higher percentage = more similar
+
+5. BROWSE RANDOM IMAGES
+   - Scroll down and click "Load Random Images"
+   - This shows 20 random images from your database
+
+==========================================
+HOW TO START/STOP THE SERVER
+==========================================
+
+TO START:
+- Double-click: start_server.bat
+- OR run in PowerShell: .\venv\Scripts\python.exe app.py
+
+TO STOP:
+- Close the server window
+- OR press Ctrl+C in the terminal
+
+==========================================
+HOW TO ADD YOUR OWN IMAGES
+==========================================
+
+1. Add your images to the "data" folder
+   - You can create subfolders for organization
+   - Supported formats: JPG, PNG, GIF, BMP
+
+2. Rebuild the index:
+   .\venv\Scripts\python.exe src\indexer.py
+
+3. Restart the server
+
+==========================================
+TROUBLESHOOTING
+==========================================
+
+Q: Server won't start?
+A: Check if port 5000 is already in use. Close other applications.
+
+Q: Can't access http://localhost:5000?
+A: Make sure the server is running (check the server window).
+
+Q: Images not loading?
+A: Ensure images are in the "data" folder and you rebuilt the index.
+
+Q: Search is slow?
+A: First search is slower as it loads the model. Subsequent searches are faster.
+
+==========================================
+TECHNICAL DETAILS
+==========================================
+
+- AI Model: ResNet50 (pre-trained on ImageNet)
+- Feature Dimension: 2048D vectors
+- Similarity Metric: Cosine Similarity
+- Backend: Python, TensorFlow, Flask
+- Frontend: HTML, CSS, JavaScript
+
+==========================================
+NEED HELP?
+==========================================
+
+Check the README.md file for detailed documentation.
+
+==========================================
+
+Enjoy your AI-powered image search! 🎨✨
